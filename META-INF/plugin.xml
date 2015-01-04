@@ -1,0 +1,24 @@
+<idea-plugin version="2">
+  <id>edu.wpi.tjclark.netconsole</id>
+  <name>NetConsole</name>
+  <version>1.0</version>
+  <vendor email="tjclark@wpi.edu">Thomas Clark</vendor>
+
+  <description><![CDATA[
+      View remote messages from a cRIO or roboRIO
+    ]]></description>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="NetConsole"
+                icon="/edu/wpi/tjclark/netconsole/netconsole.png"
+                anchor="bottom"
+                factoryClass="edu.wpi.tjclark.netconsole.NetConsoleToolWindowFactory">
+    </toolWindow>
+  </extensions>
+
+</idea-plugin>
